@@ -8,6 +8,7 @@ function verificar() {
         if(nasc.value.length == 0 || Number(nasc.value) >= anoA) {
              alert('ERRO! Verifique os dados e tente novamente!')
          } else {
+             
              const sexom = document.getElementById('mas')
              const sexof = document.getElementById('fem')
              const nascimento = anoA - Number(nasc.value)
@@ -66,6 +67,7 @@ function verificar() {
                  }
                    
             }
+            
                  res.style.textAlign = 'center';
                  res.innerHTML = `<p>Detectamos ${genero} com ${nascimento} anos</p>`
                  res.appendChild(img)   
