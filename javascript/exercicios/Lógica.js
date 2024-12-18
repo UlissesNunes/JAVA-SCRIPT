@@ -8,7 +8,7 @@ function ContarN() {
     if (inicio.value.length == 0 || meio.value.length == 0 || fim.value.length == 0) {
         alert('ERRO! VERIFIQUE OS DADOS.');
     } else {
-        res.innerHTML = 'Contando...<br>'; // Limpa e inicia o resultado
+        res.innerHTML = 'Contando...<br>'
         let i1 = Number(inicio.value);
         let me2 = Number(meio.value);
         let fi3 = Number(fim.value);
@@ -21,18 +21,17 @@ function ContarN() {
         if (i1 < fi3) {
             // Contagem crescente
             for (let c = i1; c <= fi3; c += me2) {
-                res.innerHTML += `${c} 👉 `;
+                res.innerHTML += `${c} \u{1f449} `;
             }
-        } else if(c >=50) {
-            document.Section.style.height = '800px'
-        }
+        } 
+        
          else {
             // Contagem decrescente
             for (let c = i1; c >= fi3; c -= me2) {
-                res.innerHTML += `${c} 👉 `;
+                res.innerHTML += `${c} \u{1f449} `;
             }
         }
 
-        res.innerHTML += '🏁'; // Adiciona símbolo de fim
+        res.innerHTML += '\u{1f3c1}'; // Adiciona símbolo de fim
     }
 }
