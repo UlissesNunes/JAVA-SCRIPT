@@ -1,0 +1,50 @@
+main {
+    background-color: rgb(19, 44, 69);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    height: 250px;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+div#res{
+    background-color: azure;
+    flex: auto;
+    
+}
+body{
+    background-color: rgb(214, 126, 55);
+   font-family:  Helvetica, sans-serif;
+    
+}
+
+input{
+    text-align: center;
+    cursor: pointer;
+}
+h1{
+    text-align: center;
+    color:rgb(19, 44, 69);
+}
+input[type="button"] {
+    background-color: rgb(214, 125, 57);
+    color: rgb(22, 49, 77);
+}
+
+input[type="button"]:hover {
+   color: rgb(214, 125, 57);
+   background-color: rgba(48, 107, 167, 0.464);
+}
+
+select {
+    width: 150px;
+}
+
+p{
+    color: rgb(255, 255, 255);
+}
+
+
