@@ -24,8 +24,21 @@ if(l.indexOf(Number(n)) != -1) {
 
 function enviarNum() { /* SE FOR NUMERO ELE RECEBE O NUMFORM.VALUE , E SE NAO ESTIVER NA LISTA ELE RECEBE TBM NUMFORM.VALUE E OS VALORES (A LISTA) SENÃO, CASO O NUMERO JÁ ESTIVER NA LISTA ESTÁ DESCARTADO E TEM QUE MOSTRAR O ERRO (O NUMERO SO PODE APARECER UMA VEZ). */
     if(ForNum(numForm.value) && !ForLista(numForm.value , valores)) {
-        window.alert('Valor encontrado.')
+        valores.push(Number(numForm.value))
+        let item = document.createElement('option')
+        item.text = ` ${numForm.value} foi adicionado`
+        listaSelect.appendChild(item)
+
     } else {
         window.alert('Valor inválido ou já mencionado na lista, insira outro.')
     }
 }
+
+
+function finalizarSelecao() {
+
+
+}
+
+
+

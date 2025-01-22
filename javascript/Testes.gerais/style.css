@@ -18,6 +18,7 @@ div#res{
 body{
     background-color: rgb(214, 126, 55);
    font-family:  Helvetica, sans-serif;
+   font-size: .8em;
     
 }
 
@@ -39,8 +40,11 @@ input[type="button"]:hover {
    background-color: rgba(48, 107, 167, 0.464);
 }
 
-select {
-    width: 150px;
+section > select{
+    flex: auto;
+    flex-basis: 950px;
+    width: 80%;
+    font-size: .6em;
 }
 
 p{
