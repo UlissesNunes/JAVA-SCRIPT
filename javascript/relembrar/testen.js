@@ -1,0 +1,7 @@
+const soma = (a, b) => a * b 
+  const resultado = soma(72, 15 )
+  console.log("Resultado da soma:", resultado) 
+
+  const hj = (c, d) => c + d
+  const a = hj(5 , 98 )
+  console.log("Resultado da conta:", a)

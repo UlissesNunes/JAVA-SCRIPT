@@ -28,15 +28,31 @@ function enviarNum() { /* SE FOR NUMERO ELE RECEBE O NUMFORM.VALUE , E SE NAO ES
         let item = document.createElement('option')
         item.text = ` ${numForm.value} foi adicionado`
         listaSelect.appendChild(item)
+        
 
     } else {
         window.alert('Valor inválido ou já mencionado na lista, insira outro.')
     }
+    numForm.value = ''
+    numForm.focus() //Simplesmente deixa a caixa com o foco automatico
+
+    /*  numForm.value com sttring vazia significa que irá apagar a caixa toda vez que concluir a ação anterior, ou seja toda vez que adicionar um numero ele vai reniciar a caixa para readiciar outro valor.  */
 }
 
 
 function finalizarSelecao() {
+    if(valores.length == 0) {
+        window.alert('Impossível continuar com a lista vazia, adicione valores para continuar.')
+    } else {
+        let totalNum = valores.length
 
+
+        res.innerHTML = ''
+        res.innerHTML += `<p class = "p" >Ao todo foram ${totalNum} número(s) informado(s) </p>`
+        res.innerHTML += `<p class = "p" >${ADICIONE}</p>`
+        //APENAS ADICIONE OS OUTROS VALORES.
+  
+    }
 
 }
 
