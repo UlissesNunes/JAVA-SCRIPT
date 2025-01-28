@@ -28,7 +28,8 @@ function enviarNum() { /* SE FOR NUMERO ELE RECEBE O NUMFORM.VALUE , E SE NAO ES
         let item = document.createElement('option')
         item.text = ` ${numForm.value} foi adicionado`
         listaSelect.appendChild(item)
-        
+    
+        res.innerHTML = ''
 
     } else {
         window.alert('Valor inválido ou já mencionado na lista, insira outro.')
@@ -45,16 +46,38 @@ function finalizarSelecao() {
         window.alert('Impossível continuar com a lista vazia, adicione valores para continuar.')
     } else {
         let totalNum = valores.length
+        let maior = valores[0]
+        let menor = valores[0]
+        let soma = 0
+        let média = 0
+       
+        for(let posi in valores) { soma += valores[posi]
+        média = soma / totalNum
+            if(valores[posi] > maior) {
+                maior = valores[posi]
 
+                 
+            } else if (valores[posi] < menor) {
+                menor = valores[posi]
+            }
+        }
 
         res.innerHTML = ''
-        res.innerHTML += `<p class = "p" >Ao todo foram ${totalNum} número(s) informado(s) </p>`
-        res.innerHTML += `<p class = "p" >${ADICIONE}</p>`
-        //APENAS ADICIONE OS OUTROS VALORES.
+        res.innerHTML += `<p class = "p" >Ao todo foram <strong>${totalNum}</strong> número(s) informado(s) </p>`
+        res.innerHTML += `<p class = "p" >O maior valor cadastrado é <strong>${maior}</strong></p>`
+         res.innerHTML += `<p class = "p" >O menor valor cadastrado é <strong>${menor}</strong></p>`
+
+         res.innerHTML += `<p class = "p"> Em junção de todos os números somados temos:  <strong>${soma} </strong><p/>`
+
+         res.innerHTML += `<p class = "p"> A média dos valores é de <strong>${média}</strong> </p>`
   
     }
 
 }
+
+    const apagarSelecao = () => {
+         res.innerHTML = ''
+    }
 
 
 
