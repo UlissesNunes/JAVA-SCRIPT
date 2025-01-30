@@ -59,6 +59,8 @@
             } else if (valores[posi] < menor) {
                 menor = valores[posi]
             }
+
+            
                 }
 
                 res.innerHTML = ''
@@ -76,6 +78,7 @@
 
          const apagarSelecao = () => {
              res.innerHTML = ''
+
          }
 
 
