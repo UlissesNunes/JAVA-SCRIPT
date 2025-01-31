@@ -13,8 +13,14 @@ main {
 div#res{
     background-color: azure;
     flex: auto;
+    width: 83vw;
+    border: 3px solid rgb(19, 44, 69);
+    
+    
     
 }
+
+
 body{
     background-color: rgb(143, 145, 151);
     color: rgb(255, 255, 255);
@@ -29,6 +35,7 @@ input{
 h1{
     text-align: center;
     color:rgb(19, 44, 69);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.205);
 }
 input[type="button"] {
     background-color:  rgb(143, 145, 151);
@@ -43,12 +50,13 @@ input[type="button"]:hover {
 select {
     width: 150px;
 }
-
+p{ text-shadow: 1px 1px rgba(0, 0, 0, 0.205);
+}
 p.p {
     color: black;
     background-color: rgb(255, 255, 255);
     width: 80vw;
-    
+    padding: 4px;
     align-items: center;
     flex: auto;
     text-align: center;
