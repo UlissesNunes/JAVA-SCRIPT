@@ -5,8 +5,8 @@ const NewComponent = () => {
    
     return (
         <div>
-           
-            <p>COPONENTE QUE FINALMENTE IMPORTEEII</p>
+    
+            <p>COPONENTE QUE FINALMENTE IMPORTEEttII</p>
         </div>
     )
     
