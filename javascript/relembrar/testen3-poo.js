@@ -60,4 +60,46 @@ class Produto {
 
 
 let mercado = new Produto ("chuteira" , 599)
-console.log(mercado.operacao)
+/* console.log(mercado.operacao) */
+
+
+
+
+
+
+
+
+
+class Urna {
+    constructor(nome, idade) {
+        this._nome = nome
+        this._idade = idade
+    }
+
+    get nome() {
+        return 'Seu nome é ' + this._nome
+    }
+
+    get idade() {
+        if (this._idade < 16) {
+            return 'Você não vota ainda';
+        } else {
+            return `Você tem ${this._idade} anos, pode votar`;
+        }
+    }
+
+    set idade(Votaidade) {
+        if (Votaidade >= 16) {
+            this._idade = Votaidade;
+        } else {
+            console.log('Você não pode votar ainda.');
+        }
+    }
+     
+}
+
+        const urna = new Urna("Ulisses" , 19)
+        console.log(urna.nome)
+        console.log(urna.idade)
+
+        
