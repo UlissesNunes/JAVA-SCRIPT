@@ -5,11 +5,13 @@ import TiguanVW from './componentes/TiguanVW'
 
 import Dados from './componentes/Dados'
 
+import EventoOnclick from './componentes/EventoOnclick'
+
 
 
 
 function App() {
-
+ 
   const name = {
     name: 'Ulisses' 
   }
@@ -19,8 +21,6 @@ function App() {
   }
 
   const nome = "mari"
-  const idade = 21
-  const status = "casada com Ulisses"
   const profissão = "professora"
   const salario = 3650
   const localidade = "camaçari"
@@ -32,7 +32,10 @@ function App() {
      <p> o resultado da soma é {som(2,4)}</p>
      <TiguanVW nome= "Ulisses"/>
      <TiguanVW nome={nome}/>
-     <Dados nome={nome} idade={idade} status={status} profissão={profissão} salario={salario} localidade={localidade}/>
+     <Dados nome={nome} idade={21} status="casada com Ulisses" profissão={profissão} salario={salario} localidade={localidade}/>
+
+    <EventoOnclick/>
+
     </>
   )
 }

@@ -14,3 +14,26 @@ body {
 img {
   flex: auto;
 }
+
+button {
+  cursor: pointer;
+}
+
+div.secao {
+  
+  background-color: aliceblue;
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+ 
+  padding: 3px;
+  margin: 4px;
+}
+.esp {
+  margin-top: 50px;
+  padding: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.113);
+  
+}
