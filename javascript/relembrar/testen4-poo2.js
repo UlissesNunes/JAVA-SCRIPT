@@ -51,6 +51,6 @@ class ContaBancaria {
 console.log(conta.titular)
 console.log('Atualmente você tem R$' + conta.dinheiroD )
 
-conta.saque()
+conta.saque(1)
 
-conta.deposito()
+conta.deposito(1)
