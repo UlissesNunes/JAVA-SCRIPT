@@ -24,17 +24,14 @@ class Developer {
 }
 const joão = new Developer('javascript' ,'João' , 19 , 2005 , 2)
 
-console.log (joão.language)
-console.log(joão.name)
-console.log(joão.years)
-console.log(joão.yearsOfStudy)
+console.log (joão.language , joão.name  ,joão.years   ,joão.yearsOfStudy )
+
+
+console.log("..........................")
 
 const gilmar = new Developer('java' ,'Gilmar' , 29 , 1995 , 10)
 
-console.log (gilmar.language)
-console.log(gilmar.name)
-console.log(gilmar.years)
-console.log(gilmar.yearsOfStudy)
+console.log (gilmar.language ,gilmar.name , gilmar.years   , gilmar.yearsOfStudy )
 
 class Marcos extends Developer {
     constructor( name , language, moradia) {
