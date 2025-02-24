@@ -3,44 +3,44 @@
 
 
 class ContaBancaria {
-    constructor(titular, dinheiroD) {
+    constructor(titular, saldoAtual) {
         this._titular = titular
-        this._dinheiroD = dinheiroD
+        this._saldoAtual = saldoAtual >= 0 ? saldoAtual : 0
     }
 
     get titular() {
         return 'Olá '+ this._titular + '! seja bem vindo ao seu aplicativo financeiro. Aqui você é o PROTAGONISTA'
     }
 
-    get dinheiroD() {
-        return this._dinheiroD
+    get saldoAtual() {
+        return this._saldoAtual
     }
 
-    set dinheiroD(saldo) {
-        if(saldo >= 1) {
-         this._dinheiroD = saldo
+    set saldoAtual(saldo) {
+        if(saldo >= 0) {
+         this._saldoAtual = saldo
 
         }
     }
 
     deposito(saldo) {
         if (saldo === undefined || saldo <= 0) {
-            console.log(`Você não forneceu um valor válido para o depósito. Seu saldo total é R$${this.dinheiroD}.`)
+            console.log(`Você não forneceu um valor válido para o depósito. Seu saldo total é R$${this.saldoAtual}.`)
         } else {
-            this._dinheiroD += saldo;
-            console.log(`Você depositou R$${saldo}. Seu saldo total agora é R$${this.dinheiroD}.`)
+            this._saldoAtual += saldo;
+            console.log(`Você depositou R$${saldo}. Seu saldo total agora é R$${this.saldoAtual}.`)
         }
     }
 
 
     saque(saldo) {
         if (saldo === undefined || saldo <= 0) {
-            console.log(`Você não forneceu um valor válido para o saque. Seu saldo total é R$${this.dinheiroD}.`);
-        } else if (saldo > this._dinheiroD) {
-            console.log(`Saldo insuficiente para saque. Seu saldo total é : R$${this.dinheiroD}.`);
+            console.log(`Você não forneceu um valor válido para o saque. Seu saldo total é R$${this.saldoAtual}.`);
+        } else if (saldo > this.saldoAtual) {
+            console.log(`Saldo insuficiente para saque. Seu saldo total é : R$${this.saldoAtual}.`);
         } else {
-            this._dinheiroD -= saldo;
-            console.log(`Você sacou R$${saldo}. Agora você possui : R$${this.dinheiroD}.`)
+            this._saldoAtual -= saldo;
+            console.log(`Você sacou R$${saldo}. Agora você possui : R$${this.saldoAtual}.`)
         }
     }
 
@@ -49,7 +49,7 @@ class ContaBancaria {
  const conta = new ContaBancaria ( "jonan" , 10000)
 
 console.log(conta.titular)
-console.log('Atualmente você tem R$' + conta.dinheiroD )
+console.log('Atualmente você tem R$' + conta.saldoAtual )
 
 conta.saque(1)
 
