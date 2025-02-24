@@ -39,3 +39,5 @@ console.log (`${product.name}`)
 console.log (`${product.price} `)
  setTimeout(() => {
      console.log(`${product.discountt}`)}, 2700  )
+
+     
