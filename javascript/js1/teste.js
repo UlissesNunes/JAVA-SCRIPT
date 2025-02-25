@@ -1,3 +1,2 @@
-for(var c=1; c >= 20 ; c++) {
-    console.log(`passo ${c}`)
-}
+const calc  = (n , b) => n + b
+console.log(calc(1,4))
