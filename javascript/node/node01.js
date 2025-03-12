@@ -1,5 +1,8 @@
 
-// console.log(__dirname);
+// cd /c/Users/Ulisses/Documents/estudos/JAVA-SCRIPT/javascript/node
+
+
+//console.log(__dirname);
 //diz a respeito do repositorio local nesse caso é o "node"
 
 
@@ -20,6 +23,7 @@
 
 //console.log(global)
 // O global é um objeto que está disponível em qualquer lugar do código
+// Ele é um objeto global do node que contém várias propriedades e métodos
 
 
 
@@ -36,12 +40,12 @@
 
 
 
-//console.log(process)
+console.log(process)
 // process é um objeto global do node que fornece informações sobre o processo em execução
 
 
 
-console.log(process.argv)
+//console.log(process.argv)
 // argv é uma propriedade do objeto process que retorna uma matriz com os argumentos de linha de comando
 
 
