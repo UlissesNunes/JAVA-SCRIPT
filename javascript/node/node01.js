@@ -40,14 +40,14 @@
 
 
 
-console.log(process)
+//console.log(process)
 // process é um objeto global do node que fornece informações sobre o processo em execução
 
 
 
-//console.log(process.argv)
+console.log(process.argv)
 // argv é uma propriedade do objeto process que retorna uma matriz com os argumentos de linha de comando
-
+console.log(` Seus goleiros favoritos são o ${process.argv[2]} , ${process.argv[3]} e o ${process.argv[4]}`)
 
 
 //console.log(process.env)
@@ -66,6 +66,29 @@ console.log(process)
 // console.log(process.cwd())
 // cwd é um método do objeto process que retorna o diretório de trabalho atual do processo
 // cwd significa current working directory
+
+// console.log(process.memoryUsage())
+// memoryUsage é um método do objeto process que retorna um objeto com informações sobre o uso de memória
+
+// para criar modulos no node é necessário usar o module.exports
+// module.exports é um objeto que contém as propriedades que serão exportadas do módulo
+// module.exports = {nome: 'Ulisses'}
+// module.exports.nome = 'Ulisses'
+// module.exports.idade = 23
+// module.exports.soma = (a, b) => a + b
+// module.exports = function soma(a, b) {
+//     return a + b
+// }
+// isso é um módulo e faz com que o objeto seja exportado para outros arquivos 
+// e para importar esse módulo é necessário usar o require
+// const modulo = require('./modulo')
+// console.log(modulo.nome)
+// console.log(modulo.idade)
+// console.log(modulo.soma(2, 3))
+// console.log(modulo(2, 3))
+
+//sendo assim o require é uma função que importa módulos do node para o arquivo e de suma importância para o desenvolvimento de aplicações em node.js 
+// e o module.exports é um objeto que contém as propriedades que serão exportadas do módulo e é necessário para exportar objetos, funções e variáveis de um módulo para outros arquivos
 
 
 
