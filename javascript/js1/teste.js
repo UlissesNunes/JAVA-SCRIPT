@@ -39,3 +39,24 @@ console.log(mudaNome(obj))
     const funcao3 = () => console.log('uso de highter-order')        
     const funcao4 = (funcao3) => funcao3()
     funcao4(funcao3)
+
+    // FUNÇÕES CALLBACK
+    const funcao5 = (callback) => callback()
+    funcao5(() => console.log('uso de callback'))
+   
+    
+
+    // FUNÇÕES ANÔNIMAS
+    const funcao6 = () => console.log('uso de função anônima')
+    funcao6()
+
+    // FUNÇÕES RECURSIVAS
+    function recursiva(max){
+        if(max >= 10) return
+        max++
+        console.log(max)
+        recursiva(max)
+    }
+    recursiva(0)
+
+    
