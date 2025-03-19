@@ -47,7 +47,7 @@
 
 console.log(process.argv)
 // argv é uma propriedade do objeto process que retorna uma matriz com os argumentos de linha de comando
-console.log(` Seus goleiros favoritos são o ${process.argv[2]} , ${process.argv[3]} e o ${process.argv[4]}`)
+//console.log(` Seus goleiros favoritos são o ${process.argv[2]} , ${process.argv[3]} e o ${process.argv[4]}`)
 
 
 //console.log(process.env)
