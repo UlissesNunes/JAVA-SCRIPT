@@ -98,7 +98,7 @@ class Urna {
      
 }
 
-        const urna = new Urna("Ulisses" , 19)
+        const urna = new Urna("Michele" , 15)
         console.log(urna.nome)
         console.log(urna.idade)
 
